@@ -15,11 +15,11 @@ Git uses branches to keep different versions of the code in the same repository.
 The main branch is call "master" and in this repository only administrator will be able to make changes to it. After making git clone, the main branch will be "master".
 To make a new branch, be sure to be inside the repo and type: 
 ```
-git branch *new_branch*
+git branch NEW_BRANCH
 ```
 This only creates tha branch, to switch into the new branch:
 ```
-git checkoout *name_of_the_branch*
+git checkoout NAME_OF_THE_BRANCH
 ```
 
 In this new branch is where changes can be made and push to github.
@@ -27,8 +27,8 @@ In this new branch is where changes can be made and push to github.
 ## Add - Commit - Push
 The basic workflow to save changes into git is:
 ```
-git add *files_to_add*
-git commit -m "Comments about this comit"
+git add FILES_TO_ADD
+git commit -m "Usefull comments about this commit"
 ```
 After executing git commit, the changes are store
 
@@ -36,7 +36,7 @@ NOTE: if the option -m is not use, git will open VIM to enter the comment. A VIM
 
 After executing commit, the changes are store locally. To store the changes to the repo at github, use:
 ```
-git push origin _branch_to_push_
+git push origin BRANCH_TO_PUSH
 ```
 
 ## Pull
@@ -60,6 +60,8 @@ git log --oneline --decorate --graph --all
 ```
 man git
 ```
+
+* Official git web page: https://git-scm.com/
 
 * Pro Git Book Available at: https://git-scm.com/book/en/v2
 

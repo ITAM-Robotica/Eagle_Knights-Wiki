@@ -36,7 +36,7 @@ NOTE: if the option -m is not use, git will open VIM to enter the comment. A VIM
 
 After executing commit, the changes are store locally. To store the changes to the repo at github, use:
 ```
-git push origin `*`branch_to_push`*`
+git push origin _branch_to_push_
 ```
 
 ## Pull

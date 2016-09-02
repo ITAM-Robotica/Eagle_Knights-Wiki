@@ -1,0 +1,8 @@
+prefix=/home/shotzo/Tarea_1/devel
+
+Name: agitr
+Description: Description of agitr
+Version: 0.0.1
+Cflags: 
+Libs: -L/home/shotzo/Tarea_1/devel/lib 
+Requires: 

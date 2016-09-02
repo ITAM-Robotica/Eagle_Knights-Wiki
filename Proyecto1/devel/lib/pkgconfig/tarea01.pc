@@ -1,0 +1,8 @@
+prefix=/home/carlos/ros/TemasSelectos/devel
+
+Name: tarea01
+Description: Description of tarea01
+Version: 0.0.1
+Cflags: 
+Libs: -L/home/carlos/ros/TemasSelectos/devel/lib 
+Requires: 

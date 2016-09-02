@@ -1,0 +1,2 @@
+tarea01
+-DCATKIN_DEVEL_PREFIX=/home/carlos/ros/TemasSelectos/devel -DCMAKE_INSTALL_PREFIX=/home/carlos/ros/TemasSelectos/install -G Unix Makefiles

@@ -19,7 +19,7 @@ git branch NEW_BRANCH
 ```
 This only creates tha branch, to switch into the new branch:
 ```
-git checkoout NAME_OF_THE_BRANCH
+git checkout NAME_OF_THE_BRANCH
 ```
 
 In this new branch is where changes can be made and push to github.

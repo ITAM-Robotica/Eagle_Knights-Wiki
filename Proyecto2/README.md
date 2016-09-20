@@ -44,7 +44,7 @@ mkdir EKBot
 cp PATH_TO_REPO/SDI-11911/Proyecto2/src/ekbot_description/model.* EKBot/
 ```
 
-Run gazebo with the EKBot (omnidirection robot)
+## Run gazebo with the EKBot 
 
 ```
 source devel/setup.bash

@@ -1,11 +1,22 @@
 # Proyecto 2
 
-# Gazebo
+## Gazebo
+
+Setup your computer to accept software from packages.osrfoundation.org and setup keys
+```
+sudo sh -c 'echo "deb http://packages.osrfoundation.org/gazebo/ubuntu-stable `lsb_release -cs` main" > /etc/apt/sources.list.d/gazebo-stable.list'
+wget http://packages.osrfoundation.org/gazebo.key -O - | sudo apt-key add -
+sudo apt-get update
+```
 Install Gazebo5
 ```
 sudo apt-get install ros-indigo-gazebo5-ros-pkgs ros-indigo-gazebo5-ros-control
 ```
-This should install Gazebo5 with the packages for using gazebo with ROS
+This should install Gazebo5 with the packages for using gazebo with ROS. To check if Gazebo version 5.3.0 was install succesfully, run:
+```
+gazebo --version
+```
+
 ## Setup
 
 Clone the repository
@@ -29,6 +40,7 @@ Verify there are no errors.
 To run gazebo with the EKBot (omnidirection robot)
 ```
 source devel/setup.bash
+roscore
 export GAZEBO_MODEL_PATH=PATH_TO_REPO/SDI-11911/Proyecto2/src/ #or include it in your ba
 shrc
 roslaunch ekbot_gazebo ekbot.launch #launches gazebo with EKBot in the (0,0,0)

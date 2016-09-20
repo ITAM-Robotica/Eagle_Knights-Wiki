@@ -24,14 +24,8 @@
         </visual>
         <gravity>true</gravity>
         <inertial>
-          <pose> 0 0 0 0 0 0 </pose>
+          <pose> 0 0 -.05 0 0 0 </pose>
           <mass> 2 </mass>
-          <ixx> 3.02e-4 </ixx>
-          <ixy> -0 </ixy>
-          <ixz> 0 </ixz>
-          <iyy> 4.9e-4 </iyy>
-          <iyz> 0 </iyz>
-          <izz> 3.02e-4 </izz>
         </inertial>
       </link>
       <!-- <pose frame=''>0 0 0.1 0 0 0</pose> -->
@@ -48,16 +42,6 @@
               <length>0.013</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -67,16 +51,6 @@
             </cylinder>
           </geometry>
         </visual>
-        <inertial>
-          <pose> 0 0 0 0 0 0 </pose>
-          <mass> 0 </mass>
-          <ixx> 0 </ixx>
-          <ixy> 0 </ixy>
-          <ixz> 0 </ixz>
-          <iyy> 0 </iyy>
-          <iyz> 0 </iyz>
-          <izz> 0 </izz>
-        </inertial>
       </link>
 
       <link name='roller1w1'>
@@ -90,16 +64,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -115,16 +79,6 @@
             <emissive>0 0 0 0</emissive>
           </material>
         </visual>
-        <inertial>
-          <pose> 0 0 0 0 0 0 </pose>
-          <mass> 0 </mass>
-          <ixx> 0 </ixx>
-          <ixy> 0 </ixy>
-          <ixz> 0 </ixz>
-          <iyy> 0 </iyy>
-          <iyz> 0 </iyz>
-          <izz> 0 </izz>
-        </inertial>
       </link>
 
       <link name='roller2w1'>
@@ -136,16 +90,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -161,16 +105,6 @@
             <emissive>0 0 0 0</emissive>
           </material>
         </visual>
-        <inertial>
-          <pose> 0 0 0 0 0 0 </pose>
-          <mass> 0 </mass>
-          <ixx> 0 </ixx>
-          <ixy> 0 </ixy>
-          <ixz> 0 </ixz>
-          <iyy> 0 </iyy>
-          <iyz> 0 </iyz>
-          <izz> 0 </izz>
-        </inertial>
       </link>
 
       <link name='roller3w1'>
@@ -182,16 +116,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -207,16 +131,6 @@
             <emissive>0 0 0 0</emissive>
           </material>
         </visual>
-        <inertial>
-          <pose> 0 0 0 0 0 0 </pose>
-          <mass> 0 </mass>
-          <ixx> 0 </ixx>
-          <ixy> 0 </ixy>
-          <ixz> 0 </ixz>
-          <iyy> 0 </iyy>
-          <iyz> 0 </iyz>
-          <izz> 0 </izz>
-        </inertial>
       </link>
 
       <link name='roller4w1'>
@@ -228,16 +142,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -253,16 +157,6 @@
             <emissive>0 0 0 0</emissive>
           </material>
         </visual>
-        <inertial>
-          <pose> 0 0 0 0 0 0 </pose>
-          <mass> 0 </mass>
-          <ixx> 0 </ixx>
-          <ixy> 0 </ixy>
-          <ixz> 0 </ixz>
-          <iyy> 0 </iyy>
-          <iyz> 0 </iyz>
-          <izz> 0 </izz>
-        </inertial>
       </link>
 
       <link name='roller5w1'>
@@ -274,16 +168,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -299,16 +183,6 @@
             <emissive>0 0 0 0</emissive>
           </material>
         </visual>
-        <inertial>
-          <pose> 0 0 0 0 0 0 </pose>
-          <mass> 0 </mass>
-          <ixx> 0 </ixx>
-          <ixy> 0 </ixy>
-          <ixz> 0 </ixz>
-          <iyy> 0 </iyy>
-          <iyz> 0 </iyz>
-          <izz> 0 </izz>
-        </inertial>
       </link>
 
       <link name='roller6w1'>
@@ -320,16 +194,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -345,16 +209,6 @@
             <emissive>0 0 0 0</emissive>
           </material>
         </visual>
-        <inertial>
-          <pose> 0 0 0 0 0 0 </pose>
-          <mass> 0 </mass>
-          <ixx> 0 </ixx>
-          <ixy> 0 </ixy>
-          <ixz> 0 </ixz>
-          <iyy> 0 </iyy>
-          <iyz> 0 </iyz>
-          <izz> 0 </izz>
-        </inertial>
       </link>
 
       <link name='roller7w1'>
@@ -366,16 +220,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -391,16 +235,6 @@
             <emissive>0 0 0 0</emissive>
           </material>
         </visual>
-        <inertial>
-          <pose> 0 0 0 0 0 0 </pose>
-          <mass> 0 </mass>
-          <ixx> 0 </ixx>
-          <ixy> 0 </ixy>
-          <ixz> 0 </ixz>
-          <iyy> 0 </iyy>
-          <iyz> 0 </iyz>
-          <izz> 0 </izz>
-        </inertial>
       </link>
 
       <link name='roller8w1'>
@@ -412,16 +246,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -437,16 +261,6 @@
             <emissive>0 0 0 0</emissive>
           </material>
         </visual>
-        <inertial>
-          <pose> 0 0 0 0 0 0 </pose>
-          <mass> 0 </mass>
-          <ixx> 0 </ixx>
-          <ixy> 0 </ixy>
-          <ixz> 0 </ixz>
-          <iyy> 0 </iyy>
-          <iyz> 0 </iyz>
-          <izz> 0 </izz>
-        </inertial>
       </link>
 
       <link name='roller9w1'>
@@ -458,16 +272,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -483,16 +287,6 @@
             <emissive>0 0 0 0</emissive>
           </material>
         </visual>
-        <inertial>
-          <pose> 0 0 0 0 0 0 </pose>
-          <mass> 0 </mass>
-          <ixx> 0 </ixx>
-          <ixy> 0 </ixy>
-          <ixz> 0 </ixz>
-          <iyy> 0 </iyy>
-          <iyz> 0 </iyz>
-          <izz> 0 </izz>
-        </inertial>
       </link>
 
       <link name='roller10w1'>
@@ -504,16 +298,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -529,16 +313,6 @@
             <emissive>0 0 0 0</emissive>
           </material>
         </visual>
-        <inertial>
-          <pose> 0 0 0 0 0 0 </pose>
-          <mass> 0 </mass>
-          <ixx> 0 </ixx>
-          <ixy> 0 </ixy>
-          <ixz> 0 </ixz>
-          <iyy> 0 </iyy>
-          <iyz> 0 </iyz>
-          <izz> 0 </izz>
-        </inertial>
       </link>
 
       <link name='roller11w1'>
@@ -550,16 +324,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -575,16 +339,6 @@
             <emissive>0 0 0 0</emissive>
           </material>
         </visual>
-        <inertial>
-          <pose> 0 0 0 0 0 0 </pose>
-          <mass> 0 </mass>
-          <ixx> 0 </ixx>
-          <ixy> 0 </ixy>
-          <ixz> 0 </ixz>
-          <iyy> 0 </iyy>
-          <iyz> 0 </iyz>
-          <izz> 0 </izz>
-        </inertial>
       </link>
 
       <link name='roller12w1'>
@@ -596,16 +350,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -621,16 +365,6 @@
             <emissive>0 0 0 0</emissive>
           </material>
         </visual>
-        <inertial>
-          <pose> 0 0 0 0 0 0 </pose>
-          <mass> 0 </mass>
-          <ixx> 0 </ixx>
-          <ixy> 0 </ixy>
-          <ixz> 0 </ixz>
-          <iyy> 0 </iyy>
-          <iyz> 0 </iyz>
-          <izz> 0 </izz>
-        </inertial>
       </link>
 
       <link name='roller13w1'>
@@ -642,16 +376,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -667,16 +391,6 @@
             <emissive>0 0 0 0</emissive>
           </material>
         </visual>
-        <inertial>
-          <pose> 0 0 0 0 0 0 </pose>
-          <mass> 0 </mass>
-          <ixx> 0 </ixx>
-          <ixy> 0 </ixy>
-          <ixz> 0 </ixz>
-          <iyy> 0 </iyy>
-          <iyz> 0 </iyz>
-          <izz> 0 </izz>
-        </inertial>
       </link>
 
       <link name='roller14w1'>
@@ -688,16 +402,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -713,16 +417,6 @@
             <emissive>0 0 0 0</emissive>
           </material>
         </visual>
-        <inertial>
-          <pose> 0 0 0 0 0 0 </pose>
-          <mass> 0 </mass>
-          <ixx> 0 </ixx>
-          <ixy> 0 </ixy>
-          <ixz> 0 </ixz>
-          <iyy> 0 </iyy>
-          <iyz> 0 </iyz>
-          <izz> 0 </izz>
-        </inertial>
       </link>
 
       <link name='roller15w1'>
@@ -734,16 +428,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -759,16 +443,6 @@
             <emissive>0 0 0 0</emissive>
           </material>
         </visual>
-        <inertial>
-          <pose> 0 0 0 0 0 0 </pose>
-          <mass> 0 </mass>
-          <ixx> 0 </ixx>
-          <ixy> 0 </ixy>
-          <ixz> 0 </ixz>
-          <iyy> 0 </iyy>
-          <iyz> 0 </iyz>
-          <izz> 0 </izz>
-        </inertial>
       </link>
 
       <link name='roller16w1'>
@@ -780,16 +454,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -805,16 +469,6 @@
             <emissive>0 0 0 0</emissive>
           </material>
         </visual>
-        <inertial>
-          <pose> 0 0 0 0 0 0 </pose>
-          <mass> 0 </mass>
-          <ixx> 0 </ixx>
-          <ixy> 0 </ixy>
-          <ixz> 0 </ixz>
-          <iyy> 0 </iyy>
-          <iyz> 0 </iyz>
-          <izz> 0 </izz>
-        </inertial>
       </link>
 
       <link name='roller17w1'>
@@ -826,16 +480,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -851,16 +495,6 @@
             <emissive>0 0 0 0</emissive>
           </material>
         </visual>
-        <inertial>
-          <pose> 0 0 0 0 0 0 </pose>
-          <mass> 0 </mass>
-          <ixx> 0 </ixx>
-          <ixy> 0 </ixy>
-          <ixz> 0 </ixz>
-          <iyy> 0 </iyy>
-          <iyz> 0 </iyz>
-          <izz> 0 </izz>
-        </inertial>
       </link>
 
       <link name='roller18w1'>
@@ -872,16 +506,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -897,16 +521,6 @@
             <emissive>0 0 0 0</emissive>
           </material>
         </visual>
-        <inertial>
-          <pose> 0 0 0 0 0 0 </pose>
-          <mass> 0 </mass>
-          <ixx> 0 </ixx>
-          <ixy> 0 </ixy>
-          <ixz> 0 </ixz>
-          <iyy> 0 </iyy>
-          <iyz> 0 </iyz>
-          <izz> 0 </izz>
-        </inertial>
       </link>
 
       <link name='roller19w1'>
@@ -918,16 +532,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -943,16 +547,6 @@
             <emissive>0 0 0 0</emissive>
           </material>
         </visual>
-        <inertial>
-          <pose> 0 0 0 0 0 0 </pose>
-          <mass> 0 </mass>
-          <ixx> 0 </ixx>
-          <ixy> 0 </ixy>
-          <ixz> 0 </ixz>
-          <iyy> 0 </iyy>
-          <iyz> 0 </iyz>
-          <izz> 0 </izz>
-        </inertial>
       </link>
 
       <link name='roller20w1'>
@@ -964,16 +558,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -989,16 +573,6 @@
             <emissive>0 0 0 0</emissive>
           </material>
         </visual>
-        <inertial>
-          <pose> 0 0 0 0 0 0 </pose>
-          <mass> 0 </mass>
-          <ixx> 0 </ixx>
-          <ixy> 0 </ixy>
-          <ixz> 0 </ixz>
-          <iyy> 0 </iyy>
-          <iyz> 0 </iyz>
-          <izz> 0 </izz>
-        </inertial>
       </link>
 
       <link name='roller21w1'>
@@ -1010,16 +584,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -1035,16 +599,6 @@
             <emissive>0 0 0 0</emissive>
           </material>
         </visual>
-        <inertial>
-          <pose> 0 0 0 0 0 0 </pose>
-          <mass> 0 </mass>
-          <ixx> 0 </ixx>
-          <ixy> 0 </ixy>
-          <ixz> 0 </ixz>
-          <iyy> 0 </iyy>
-          <iyz> 0 </iyz>
-          <izz> 0 </izz>
-        </inertial>
       </link>
 
       <joint name='roller1w1_joint_rev' type='revolute'>
@@ -1354,16 +908,6 @@
               <length>0.013</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -1384,16 +928,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -1420,16 +954,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -1456,16 +980,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -1492,16 +1006,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -1528,16 +1032,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -1564,16 +1058,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -1600,16 +1084,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -1636,16 +1110,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -1672,16 +1136,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -1708,16 +1162,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -1744,16 +1188,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -1780,16 +1214,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -1816,16 +1240,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -1852,16 +1266,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -1888,16 +1292,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -1924,16 +1318,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -1960,16 +1344,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -1996,16 +1370,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -2032,16 +1396,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -2068,16 +1422,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -2104,16 +1448,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -2438,16 +1772,6 @@
               <length>0.013</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -2468,16 +1792,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -2504,16 +1818,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -2540,16 +1844,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -2576,16 +1870,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -2612,16 +1896,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -2648,16 +1922,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -2684,16 +1948,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -2720,16 +1974,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -2756,16 +2000,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -2792,16 +2026,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -2828,16 +2052,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -2864,16 +2078,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -2900,16 +2104,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -2936,16 +2130,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -2972,16 +2156,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -3008,16 +2182,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -3044,16 +2208,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -3080,16 +2234,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -3116,16 +2260,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -3152,16 +2286,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -3188,16 +2312,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -3522,16 +2636,6 @@
               <length>0.013</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -3552,16 +2656,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -3588,16 +2682,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -3624,16 +2708,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -3660,16 +2734,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -3696,16 +2760,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -3732,16 +2786,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -3768,16 +2812,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -3804,16 +2838,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -3840,16 +2864,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -3876,16 +2890,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -3912,16 +2916,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -3948,16 +2942,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -3984,16 +2968,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -4020,16 +2994,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -4056,16 +3020,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -4092,16 +3046,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -4128,16 +3072,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -4164,16 +3098,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -4200,16 +3124,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -4236,16 +3150,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -4272,16 +3176,6 @@
               <length>0.004</length>
             </cylinder>
           </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
         </collision>
         <visual name='visual'>
           <geometry>
@@ -4731,14 +3625,6 @@
         </ode>
       </physics>
     </joint>
-<!--     <plugin name="set_wheel1_velocity" filename="">
-
-    </plugin> -->
-    <!-- <plugin name="laser_controller" filename="gazebo_plugin.so">
-      <robotNamespace></robotNamespace>
-      <topicName>nuevoTop</topicName>
-      <frameName>link</frameName>
-    </plugin> -->
 
     <static>0</static>
     <allow_auto_disable>1</allow_auto_disable>

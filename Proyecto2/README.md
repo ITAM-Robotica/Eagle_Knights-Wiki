@@ -62,11 +62,11 @@ rostopic pub /target_position_topic geometry_msgs/Twist -- '[3,0,0]' '[0,0,0]' #
 rosrun ekbot_ctrl robot_trajectory_node #node to calculate a simple trajectory
 ```
 
-# Important Files
+## Important Files
 The EKBot description file - src/ekbot_description/model.sdf
 The launch file - src/ekbot_gazebo/launch/ekbot.launch 
 The trajectory generator - src/ekbot_ctrl/robot_trajectory_node.cpp
 
-# Links
+## Links
 Gazebo - http://gazebosim.org/tutorials
 

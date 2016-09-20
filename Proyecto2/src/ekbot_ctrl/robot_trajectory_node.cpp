@@ -81,21 +81,6 @@ geometry_msgs::Twist generateConstantVelocity(double constant_speed, geometry_ms
 	return velocity;
 }
 
-//Function to generate an Angular Constant Velocity from robot's position to the target's position
-geometry_msgs::Twist rotateVelocity(geometry_msgs::Twist velocity, double rotation_angle){
-
-    // Compute direction to goal
-	Vector3d original_vector(velocity.linear.x,velocity.linear.y,velocity.angular.z);
-
-	geometry_msgs::Twist velocity_new;
-
-	velocity_new.linear.x = original_vector.x() * cos(rotation_angle) - original_vector.y() * sin(rotation_angle);
-	velocity_new.linear.y = original_vector.x() * sin(rotation_angle) + original_vector.y() * cos(rotation_angle);
-	velocity_new.angular.z = original_vector.z();
-
-	return velocity_new;
-}
-
 // Function to keep velocity under the allowed robot limits
 geometry_msgs::Twist boundVelocity(geometry_msgs::Twist velocity) {
 

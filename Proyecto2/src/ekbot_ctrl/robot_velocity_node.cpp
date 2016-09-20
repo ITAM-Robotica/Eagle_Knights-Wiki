@@ -25,68 +25,6 @@ geometry_msgs::Twist velocity_msg;
 //rate_hz assignment
 double rate_hz = 1;
 
-//Assign the position of the robot (from other topic) to robot_position.
-//Assuming the topic that generate the robot position uses geometry_msgs::Twist
-//and the information is in dummy.linear. This might need to be modifed
-void getRobotPose(const geometry_msgs::Twist& msg) {
-	robot_position.linear.x = msg.linear.x;
-	robot_position.linear.y = msg.linear.y;
-    robot_position.angular.z = msg.linear.z; 
-}
-
-//Assign the position of the target (from other topic) to target_position.
-//Assuming the topic that generate the robot position uses geometry_msgs::Twist
-//and the information is in dummy.linear. This might need to be modifed
-
-
-//Function to determine if the goal is still far.
-//Variables epsilon_x and epsilon_y used to determined if the goal has been reach
-bool isGoalFar(geometry_msgs::Twist p_start, geometry_msgs::Twist p_goal) {
-	double epsilon_x, epsilon_y;
-	epsilon_x = 150; 
-	epsilon_y = 150;
-	double distance_x = abs(p_goal.linear.x - p_start.linear.x);
-	double distance_y = abs(p_goal.linear.y - p_start.linear.y);
-	if (distance_x > epsilon_x || distance_y > epsilon_y)
-		return true;
-	else
-		return false;
-}
-
-//Function to generate a Linear Constant Velocity from robot's position to the target's position
-geometry_msgs::Twist generateConstantVelocity(double constant_speed, geometry_msgs::Twist p_start, geometry_msgs::Twist p_goal){
-
-    // Compute direction to goal
-	Vector3d p_start_vector(p_start.linear.x,p_start.linear.y,p_start.angular.z);
-	Vector3d p_goal_vector(p_goal.linear.x, p_goal.linear.y, p_goal.angular.z);
-	Vector3d goal_direction_vector = p_goal_vector-p_start_vector;
-
-    // Compute speed in the direction to goal
-	Vector3d velocity_vector = constant_speed * (goal_direction_vector/ goal_direction_vector.norm());
-
-	geometry_msgs::Twist velocity;
-
-	velocity.linear.x = velocity_vector.x();
-	velocity.linear.y = velocity_vector.y();
-	velocity.angular.z = velocity_vector.z();
-
-	return velocity;
-}
-
-//Function to generate an Angular Constant Velocity from robot's position to the target's position
-geometry_msgs::Twist rotateVelocity(geometry_msgs::Twist velocity, double rotation_angle){
-
-    // Compute direction to goal
-	Vector3d original_vector(velocity.linear.x,velocity.linear.y,velocity.angular.z);
-
-	geometry_msgs::Twist velocity_new;
-
-	velocity_new.linear.x = original_vector.x() * cos(rotation_angle) - original_vector.y() * sin(rotation_angle);
-	velocity_new.linear.y = original_vector.x() * sin(rotation_angle) + original_vector.y() * cos(rotation_angle);
-	velocity_new.angular.z = original_vector.z();
-
-	return velocity_new;
-}
 
 double* getMotorValue(int x_velocity, int y_velocity, int w_velocity){
 	double deg1 = 3 * M_PI / 10;
@@ -114,8 +52,6 @@ double* getMotorValue(int x_velocity, int y_velocity, int w_velocity){
 
     return velMots;
 }
-// Function to keep velocity under the allowed robot limits
-
 
 void get_vel_vec(const geometry_msgs::Twist& msg) {
 	velocity_msg.linear.x = msg.linear.x;

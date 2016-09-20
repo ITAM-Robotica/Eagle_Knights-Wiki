@@ -1,0 +1,3636 @@
+<?xml version='1.0'?>
+<sdf version='1.5'>
+  <model name='EKBot'>
+    
+    <!-- <model name='ChassisEK'> -->
+      <link name='chassis'>
+
+        <pose frame=''>0 0 0.1 0 0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.075</radius>
+              <length>0.15</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.08</radius>
+              <length>0.15</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <gravity>true</gravity>
+        <inertial>
+          <pose> 0 0 -.05 0 0 0 </pose>
+          <mass> 2 </mass>
+        </inertial>
+      </link>
+      <!-- <pose frame=''>0 0 0.1 0 0 0</pose> -->
+    <!-- </model> -->
+
+    <!-- <model name='Omniwheel1'> -->
+      <link name='MainWheel1'>
+        <!-- <pose> 0.04996 -0.068766 0.04 0 1.57 0 3.769911184 </pose> -->
+        <pose> 0.04996 -0.068766 0.04 1.57 0 3.769911184 </pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.034</radius>
+              <length>0.013</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.034</radius>
+              <length>0.013</length>
+            </cylinder>
+          </geometry>
+        </visual>
+      </link>
+
+      <link name='roller1w1'>
+        
+        <pose>0.073421  -0.051720 0.04  3.141592654 6.28319 0.628321184</pose>
+
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+
+      <link name='roller2w1'>
+        <pose>0.072379  -0.052477 0.04855 3.141592654 5.98399 0.628321184</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+
+      <link name='roller3w1'>
+        <pose>0.069345  -0.054682 0.05634 3.141592654 5.68479 0.628321184</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+
+      <link name='roller4w1'>
+        <pose frame=''>0.064588 -0.058138 0.06267 3.141592654 5.38559 0.628321184</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+
+      <link name='roller5w1'>
+        <pose frame=''>0.058531 -0.062538 0.06700 3.141592654 5.08639 0.628321184</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+
+      <link name='roller6w1'>
+        <pose frame=''>0.051713 -0.067492 0.06892 3.141592654 4.78719 0.628321184</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+
+      <link name='roller7w1'>
+        <pose frame=''>0.044739 -0.072559 0.06827 3.141592654 4.48799 0.628321184</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+
+      <link name='roller8w1'>
+        <pose frame=''>0.038229 -0.077289 0.06511 3.141592654 4.18879 0.628321184</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+
+      <link name='roller9w1'>
+        <pose frame=''>0.032762 -0.081261 0.05973 3.141592654 3.88959 0.628321184</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+
+      <link name='roller10w1'>
+        <pose frame=''>0.028822 -0.084124 0.05258 3.141592654 3.59039 0.628321184</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+
+      <link name='roller11w1'>
+        <pose frame=''>0.026761 -0.085621 0.04432 3.141592654 3.29119 0.628321184</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+
+      <link name='roller12w1'>
+        <pose frame=''>0.026761 -0.085621 0.03568 3.141592654 2.99199 0.628321184</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+
+      <link name='roller13w1'>
+        <pose frame=''>0.028822 -0.084124 0.02742 3.141592654 2.69279 0.628321184</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+
+      <link name='roller14w1'>
+        <pose frame=''>0.032762 -0.081261 0.02027 3.141592654 2.39359 0.628321184</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+
+      <link name='roller15w1'>
+        <pose frame=''>0.038229 -0.077289 0.01489 3.141592654 2.09440 0.628321184</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+
+      <link name='roller16w1'>
+        <pose frame=''>0.044739 -0.072559 0.01173 3.141592654 1.79520 0.628321184</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+
+      <link name='roller17w1'>
+        <pose frame=''>0.051713 -0.067492 0.01108 3.141592654 1.49600 0.628321184</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+
+      <link name='roller18w1'>
+        <pose frame=''>0.058531 -0.062538 0.01300 3.141592654 1.19680 0.628321184</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+
+      <link name='roller19w1'>
+        <pose frame=''>0.064588 -0.058138 0.01733 3.141592654 0.89760 0.628321184</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+
+      <link name='roller20w1'>
+        <pose frame=''>0.069345 -0.054682 0.02366 3.141592654 0.59840 0.628321184</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+
+      <link name='roller21w1'>
+        <pose frame=''>0.072379 -0.052477 0.03145 3.141592654 0.29920 0.628321184</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+
+      <joint name='roller1w1_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 0 0 </pose>
+        <child>roller1w1</child>
+        <parent>MainWheel1</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+
+      <joint name='roller2w1_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller2w1</child>
+        <parent>MainWheel1</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+
+      <joint name='roller3w1_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller3w1</child>
+        <parent>MainWheel1</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+
+      <joint name='roller4w1_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller4w1</child>
+        <parent>MainWheel1</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+
+      <joint name='roller5w1_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller5w1</child>
+        <parent>MainWheel1</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+
+      <joint name='roller6w1_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller6w1</child>
+        <parent>MainWheel1</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+
+      <joint name='roller7w1_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller7w1</child>
+        <parent>MainWheel1</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+
+      <joint name='roller8w1_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller8w1</child>
+        <parent>MainWheel1</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+
+      <joint name='roller9w1_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller9w1</child>
+        <parent>MainWheel1</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+
+      <joint name='roller10w1_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller10w1</child>
+        <parent>MainWheel1</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+
+      <joint name='roller11w1_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller11w1</child>
+        <parent>MainWheel1</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+
+      <joint name='roller12w1_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller12w1</child>
+        <parent>MainWheel1</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+
+      <joint name='roller13w1_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller13w1</child>
+        <parent>MainWheel1</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+
+      <joint name='roller14w1_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller14w1</child>
+        <parent>MainWheel1</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+
+      <joint name='roller15w1_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller15w1</child>
+        <parent>MainWheel1</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+
+      <joint name='roller16w1_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller16w1</child>
+        <parent>MainWheel1</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+
+      <joint name='roller17w1_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller17w1</child>
+        <parent>MainWheel1</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+
+      <joint name='roller18w1_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller18w1</child>
+        <parent>MainWheel1</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+
+      <joint name='roller19w1_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller19w1</child>
+        <parent>MainWheel1</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+
+      <joint name='roller20w1_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller20w1</child>
+        <parent>MainWheel1</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+
+      <joint name='roller21w1_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller21w1</child>
+        <parent>MainWheel1</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+
+      <!-- <pose frame=''>0.04996 -0.068766 0.04 1.57 0 3.769911184</pose> -->
+    <!-- </model> -->
+
+    <!-- <model name='Omniwheel2'> -->
+      <link name='MainWheel2'>
+        <pose frame=''>0.04996174644  0.06876644452 0.04  1.57  0 -0.62831853</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.034</radius>
+              <length>0.013</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.034</radius>
+              <length>0.013</length>
+            </cylinder>
+          </geometry>
+        </visual>
+      </link>
+
+      <link name='roller1w2'>
+        <pose frame=''>0.073423 0.051721  0.04  0 6.28319 -0.62831853</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+
+      <link name='roller2w2'>
+        <pose frame=''>0.072381 0.052478  0.04855 0 5.98399 -0.62831853</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+
+      <link name='roller3w2'>
+        <pose frame=''>0.069347 0.054683  0.05634 0 5.68479 -0.62831853</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+
+      <link name='roller4w2'>
+        <pose frame=''>0.064590 0.058139  0.06267 0 5.38559 -0.62831853</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+
+      <link name='roller5w2'>
+        <pose frame=''>0.058533 0.062539  0.06700 0 5.08639 -0.62831853</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+
+      <link name='roller6w2'>
+        <pose frame=''>0.051715 0.067493  0.06892 0 4.78719 -0.62831853</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+
+      <link name='roller7w2'>
+        <pose frame=''>0.044741 0.072559  0.06827 0 4.48799 -0.62831853</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+
+      <link name='roller8w2'>
+        <pose frame=''>0.038231 0.077289  0.06511 0 4.18879 -0.62831853</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+
+      <link name='roller9w2'>
+        <pose frame=''>0.032763 0.081262  0.05973 0 3.88959 -0.62831853</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+
+      <link name='roller10w2'>
+        <pose frame=''>0.028824 0.084124  0.05258 0 3.59039 -0.62831853</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+
+      <link name='roller11w2'>
+        <pose frame=''>0.026762 0.085622  0.04432 0 3.29119 -0.62831853</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+
+      <link name='roller12w2'>
+        <pose frame=''>0.026762 0.085622  0.03568 0 2.99199 -0.62831853</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+
+      <link name='roller13w2'>
+        <pose frame=''>0.028824 0.084124  0.02742 0 2.69279 -0.62831853</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+
+      <link name='roller14w2'>
+        <pose frame=''>0.032763 0.081262  0.02027 0 2.39359 -0.62831853</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+
+      <link name='roller15w2'>
+        <pose frame=''>0.038231 0.077289  0.01489 0 2.09440 -0.62831853</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+
+      <link name='roller16w2'>
+        <pose frame=''>0.044741 0.072559  0.01173 0 1.79520 -0.62831853</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+
+      <link name='roller17w2'>
+        <pose frame=''>0.051715 0.067493  0.01108 0 1.49600 -0.62831853</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+
+      <link name='roller18w2'>
+        <pose frame=''>0.058533 0.062539  0.01300 0 1.19680 -0.62831853</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+
+      <link name='roller19w2'>
+        <pose frame=''>0.064590 0.058139  0.01733 0 0.89760 -0.62831853</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+
+      <link name='roller20w2'>
+        <pose frame=''>0.069347 0.054683  0.02366 0 0.59840 -0.62831853</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+
+      <link name='roller21w2'>
+        <pose frame=''>0.072381 0.052478  0.03145 0 0.29920 -0.62831853</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+
+      <joint name='roller1w2_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller1w2</child>
+        <parent>MainWheel2</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+
+      <joint name='roller2w2_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller2w2</child>
+        <parent>MainWheel2</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+
+      <joint name='roller3w2_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller3w2</child>
+        <parent>MainWheel2</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+
+      <joint name='roller4w2_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller4w2</child>
+        <parent>MainWheel2</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+
+      <joint name='roller5w2_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller5w2</child>
+        <parent>MainWheel2</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+
+      <joint name='roller6w2_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller6w2</child>
+        <parent>MainWheel2</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+
+      <joint name='roller7w2_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller7w2</child>
+        <parent>MainWheel2</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+
+      <joint name='roller8w2_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller8w2</child>
+        <parent>MainWheel2</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+
+      <joint name='roller9w2_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller9w2</child>
+        <parent>MainWheel2</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+
+      <joint name='roller10w2_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller10w2</child>
+        <parent>MainWheel2</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+
+      <joint name='roller11w2_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller11w2</child>
+        <parent>MainWheel2</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+
+      <joint name='roller12w2_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller12w2</child>
+        <parent>MainWheel2</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+
+      <joint name='roller13w2_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller13w2</child>
+        <parent>MainWheel2</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+
+      <joint name='roller14w2_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller14w2</child>
+        <parent>MainWheel2</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+
+      <joint name='roller15w2_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller15w2</child>
+        <parent>MainWheel2</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+
+      <joint name='roller16w2_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller16w2</child>
+        <parent>MainWheel2</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+
+      <joint name='roller17w2_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller17w2</child>
+        <parent>MainWheel2</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+
+      <joint name='roller18w2_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller18w2</child>
+        <parent>MainWheel2</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+
+      <joint name='roller19w2_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller19w2</child>
+        <parent>MainWheel2</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+
+      <joint name='roller20w2_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller20w2</child>
+        <parent>MainWheel2</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+
+      <joint name='roller21w2_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller21w2</child>
+        <parent>MainWheel2</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+
+      <!-- <pose frame=''>0.04996 0.068766 0.04 1.57 0 -.62831853</pose> -->
+    <!-- </model> -->
+
+    <!-- <model name='Omniwheel3'> -->
+      <link name='MainWheel3'>
+        <pose frame=''>-0.06316731017 0.05687610154 0.04 1.57 0 0.837758041</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.034</radius>
+              <length>0.013</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.034</radius>
+              <length>0.013</length>
+            </cylinder>
+          </geometry>
+        </visual>
+      </link>
+
+      <link name='roller1w3'>
+        <pose frame=''>-0.043763  0.078427  0.04  0 6.28319 0.837758041</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+
+      <link name='roller2w3'>
+        <pose frame=''>-0.044625  0.077470  0.04855 0 5.98399 0.837758041</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+      
+      <link name='roller3w3'>
+        <pose frame=''>-0.047134  0.074683  0.05634 0 5.68479 0.837758041</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+      
+      <link name='roller4w3'>
+        <pose frame=''>-0.051069  0.070313  0.06267 0 5.38559 0.837758041</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+      
+      <link name='roller5w3'>
+        <pose frame=''>-0.056078  0.064750  0.06700 0 5.08639 0.837758041</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+      
+      <link name='roller6w3'>
+        <pose frame=''>-0.061717  0.058487  0.06892 0 4.78719 0.837758041</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+      
+      <link name='roller7w3'>
+        <pose frame=''>-0.067485  0.052081  0.06827 0 4.48799 0.837758041</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+      
+      <link name='roller8w3'>
+        <pose frame=''>-0.072870  0.046101  0.06511 0 4.18879 0.837758041</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+      
+      <link name='roller9w3'>
+        <pose frame=''>-0.077392  0.041078  0.05973 0 3.88959 0.837758041</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+      
+      <link name='roller10w3'>
+        <pose frame=''>-0.080650  0.037459  0.05258 0 3.59039 0.837758041</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+      
+      <link name='roller11w3'>
+        <pose frame=''>-0.082355  0.035566  0.04432 0 3.29119 0.837758041</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+      
+      <link name='roller12w3'>
+        <pose frame=''>-0.082355  0.035566  0.03568 0 2.99199 0.837758041</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+      
+      <link name='roller13w3'>
+        <pose frame=''>-0.080650  0.037459  0.02742 0 2.69279 0.837758041</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+      
+      <link name='roller14w3'>
+        <pose frame=''>-0.077392  0.041078  0.02027 0 2.39359 0.837758041</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+      
+      <link name='roller15w3'>
+        <pose frame=''>-0.072870  0.046101  0.01489 0 2.09440 0.837758041</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+      
+      <link name='roller16w3'>
+        <pose frame=''>-0.067485  0.052081  0.01173 0 1.79520 0.837758041</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+      
+      <link name='roller17w3'>
+        <pose frame=''>-0.061717  0.058487  0.01108 0 1.49600 0.837758041</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+      
+      <link name='roller18w3'>
+        <pose frame=''>-0.056078  0.064750  0.01300 0 1.19680 0.837758041</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+      
+      <link name='roller19w3'>
+        <pose frame=''>-0.051069  0.070313  0.01733 0 0.89760 0.837758041</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+      
+      <link name='roller20w3'>
+        <pose frame=''>-0.047134  0.074683  0.02366 0 0.59840 0.837758041</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+      
+      <link name='roller21w3'>
+        <pose frame=''>-0.044625  0.077470  0.03145 0 0.29920 0.837758041</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+      
+      <joint name='roller1w3_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller1w3</child>
+        <parent>MainWheel3</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+      
+      <joint name='roller2w3_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller2w3</child>
+        <parent>MainWheel3</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+      
+      <joint name='roller3w3_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller3w3</child>
+        <parent>MainWheel3</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+      
+      <joint name='roller4w3_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller4w3</child>
+        <parent>MainWheel3</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+      
+      <joint name='roller5w3_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller5w3</child>
+        <parent>MainWheel3</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+      
+      <joint name='roller6w3_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller6w3</child>
+        <parent>MainWheel3</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+      
+      <joint name='roller7w3_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller7w3</child>
+        <parent>MainWheel3</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+      
+      <joint name='roller8w3_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller8w3</child>
+        <parent>MainWheel3</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+      
+      <joint name='roller9w3_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller9w3</child>
+        <parent>MainWheel3</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+      
+      <joint name='roller10w3_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller10w3</child>
+        <parent>MainWheel3</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+      
+      <joint name='roller11w3_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller11w3</child>
+        <parent>MainWheel3</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+      
+      <joint name='roller12w3_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller12w3</child>
+        <parent>MainWheel3</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+      
+      <joint name='roller13w3_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller13w3</child>
+        <parent>MainWheel3</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+      
+      <joint name='roller14w3_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller14w3</child>
+        <parent>MainWheel3</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+      
+      <joint name='roller15w3_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller15w3</child>
+        <parent>MainWheel3</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+      
+      <joint name='roller16w3_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller16w3</child>
+        <parent>MainWheel3</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+      
+      <joint name='roller17w3_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller17w3</child>
+        <parent>MainWheel3</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+      
+      <joint name='roller18w3_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller18w3</child>
+        <parent>MainWheel3</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+      
+      <joint name='roller19w3_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller19w3</child>
+        <parent>MainWheel3</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+      
+      <joint name='roller20w3_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller20w3</child>
+        <parent>MainWheel3</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+      
+      <joint name='roller21w3_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 0 0</pose>
+        <child>roller21w3</child>
+        <parent>MainWheel3</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+      
+      <!-- <pose frame=''>-0.06316731017 0.05687610154 0.04 1.57 0 0.837758041</pose> -->
+    <!-- </model> -->
+
+    <!-- <model name='Omniwheel4'> -->
+      <link name='MainWheel4'>
+        <pose frame=''>-0.06316731017 -0.05687610154 0.04 1.57 0 2.303834613</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.034</radius>
+              <length>0.013</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.034</radius>
+              <length>0.013</length>
+            </cylinder>
+          </geometry>
+        </visual>
+      </link>
+
+      <link name='roller1w4'>
+        <pose frame=''>-0.082572  -0.035325 0.04  0 6.28319 2.303834613</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+
+      <link name='roller2w4'>
+        <pose frame=''>-0.081710  -0.036282 0.04855 0 5.98399 2.303834613</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+      
+      <link name='roller3w4'>
+        <pose frame=''>-0.079200  -0.039070 0.05634 0 5.68479 2.303834613</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+      
+      <link name='roller4w4'>
+        <pose frame=''>-0.075266  -0.043439 0.06267 0 5.38559 2.303834613</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+      
+      <link name='roller5w4'>
+        <pose frame=''>-0.070257  -0.049003 0.06700 0 5.08639 2.303834613</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+      
+      <link name='roller6w4'>
+        <pose frame=''>-0.064617  -0.055266 0.06892 0 4.78719 2.303834613</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+      
+      <link name='roller7w4'>
+        <pose frame=''>-0.058849  -0.061672 0.06827 0 4.48799 2.303834613</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+      
+      <link name='roller8w4'>
+        <pose frame=''>-0.053465  -0.067652 0.06511 0 4.18879 2.303834613</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+      
+      <link name='roller9w4'>
+        <pose frame=''>-0.048943  -0.072674 0.05973 0 3.88959 2.303834613</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+      
+      <link name='roller10w4'>
+        <pose frame=''>-0.045684  -0.076293 0.05258 0 3.59039 2.303834613</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+      
+      <link name='roller11w4'>
+        <pose frame=''>-0.043979  -0.078187 0.04432 0 3.29119 2.303834613</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+      
+      <link name='roller12w4'>
+        <pose frame=''>-0.043979  -0.078187 0.03568 0 2.99199 2.303834613</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+      
+      <link name='roller13w4'>
+        <pose frame=''>-0.045684  -0.076293 0.02742 0 2.69279 2.303834613</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+      
+      <link name='roller14w4'>
+        <pose frame=''>-0.048943  -0.072674 0.02027 0 2.39359 2.303834613</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+      
+      <link name='roller15w4'>
+        <pose frame=''>-0.053465  -0.067652 0.01489 0 2.09440 2.303834613</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+      
+      <link name='roller16w4'>
+        <pose frame=''>-0.058849  -0.061672 0.01173 0 1.79520 2.303834613</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+      
+      <link name='roller17w4'>
+        <pose frame=''>-0.064617  -0.055266 0.01108 0 1.49600 2.303834613</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+      
+      <link name='roller18w4'>
+        <pose frame=''>-0.070257  -0.049003 0.01300 0 1.19680 2.303834613</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+      
+      <link name='roller19w4'>
+        <pose frame=''>-0.075266  -0.043439 0.01733 0 0.89760 2.303834613</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+      
+      <link name='roller20w4'>
+        <pose frame=''>-0.079200  -0.039070 0.02366 0 0.59840 2.303834613</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+      
+      <link name='roller21w4'>
+        <pose frame=''>-0.081710  -0.036282 0.03145 0 0.29920 2.303834613</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.006</radius>
+              <length>0.004</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+      </link>
+      
+      <joint name='roller1w4_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller1w4</child>
+        <parent>MainWheel4</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+      
+      <joint name='roller2w4_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller2w4</child>
+        <parent>MainWheel4</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+      
+      <joint name='roller3w4_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller3w4</child>
+        <parent>MainWheel4</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+      
+      <joint name='roller4w4_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller4w4</child>
+        <parent>MainWheel4</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+      
+      <joint name='roller5w4_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller5w4</child>
+        <parent>MainWheel4</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+      
+      <joint name='roller6w4_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller6w4</child>
+        <parent>MainWheel4</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+      
+      <joint name='roller7w4_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller7w4</child>
+        <parent>MainWheel4</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+      
+      <joint name='roller8w4_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller8w4</child>
+        <parent>MainWheel4</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+      
+      <joint name='roller9w4_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller9w4</child>
+        <parent>MainWheel4</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+      
+      <joint name='roller10w4_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller10w4</child>
+        <parent>MainWheel4</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+      
+      <joint name='roller11w4_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller11w4</child>
+        <parent>MainWheel4</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+      
+      <joint name='roller12w4_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller12w4</child>
+        <parent>MainWheel4</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+      
+      <joint name='roller13w4_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller13w4</child>
+        <parent>MainWheel4</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+      
+      <joint name='roller14w4_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller14w4</child>
+        <parent>MainWheel4</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+      
+      <joint name='roller15w4_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller15w4</child>
+        <parent>MainWheel4</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+      
+      <joint name='roller16w4_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller16w4</child>
+        <parent>MainWheel4</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+      
+      <joint name='roller17w4_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller17w4</child>
+        <parent>MainWheel4</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+      
+      <joint name='roller18w4_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller18w4</child>
+        <parent>MainWheel4</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+      
+      <joint name='roller19w4_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller19w4</child>
+        <parent>MainWheel4</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+      
+      <joint name='roller20w4_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller20w4</child>
+        <parent>MainWheel4</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+      
+      <joint name='roller21w4_joint_rev' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>roller21w4</child>
+        <parent>MainWheel4</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+      
+      <!-- <pose frame=''>-0.06316731017 -0.05687610154 0.04 1.57 0 2.303834613</pose> -->
+    <!-- </model> -->
+
+    <joint name='chassis_JOINT_1' type='revolute'>
+      <parent>chassis</parent>
+      <child>MainWheel1</child>
+      <pose frame=''>0 0 0 0 0 0</pose>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <use_parent_model_frame>0</use_parent_model_frame>
+        <limit>
+          <lower>-1.79769e+308</lower>
+          <upper>1.79769e+308</upper>
+          <effort>-1</effort>
+          <velocity>-1</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+          <damping>0</damping>
+          <friction>0</friction>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+          <suspension>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </suspension>
+        </ode>
+      </physics>
+    </joint>
+
+    <joint name='chassis_JOINT_2' type='revolute'>
+      <parent>chassis</parent>
+      <child>MainWheel2</child>
+      <pose frame=''>0 0 0 0 0 0</pose>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <use_parent_model_frame>0</use_parent_model_frame>
+        <limit>
+          <lower>-1.79769e+308</lower>
+          <upper>1.79769e+308</upper>
+          <effort>-1</effort>
+          <velocity>-1</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+          <damping>0</damping>
+          <friction>0</friction>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+          <suspension>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </suspension>
+        </ode>
+      </physics>
+    </joint>
+
+    <joint name='chassis_JOINT_3' type='revolute'>
+      <parent>chassis</parent>
+      <child>MainWheel3</child>
+      <pose frame=''>0 0 0 0 0 0</pose>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <use_parent_model_frame>0</use_parent_model_frame>
+        <limit>
+          <lower>-1.79769e+308</lower>
+          <upper>1.79769e+308</upper>
+          <effort>-1</effort>
+          <velocity>-1</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+          <damping>0</damping>
+          <friction>0</friction>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+          <suspension>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </suspension>
+        </ode>
+      </physics>
+    </joint>
+
+    <joint name='chassis_JOINT_4' type='revolute'>
+      <parent>chassis</parent>
+      <child>MainWheel4</child>
+      <pose frame=''>0 0 0 0 0 0</pose>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <use_parent_model_frame>0</use_parent_model_frame>
+        <limit>
+          <lower>-1.79769e+308</lower>
+          <upper>1.79769e+308</upper>
+          <effort>-1</effort>
+          <velocity>-1</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+          <damping>0</damping>
+          <friction>0</friction>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+          <suspension>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </suspension>
+        </ode>
+      </physics>
+    </joint>
+
+    <static>0</static>
+    <allow_auto_disable>1</allow_auto_disable>
+  </model>
+</sdf>
+
+
+    
+

@@ -156,13 +156,9 @@ int main(int argc, char **argv){
 			<<",Y="<<target_position.linear.y
 			<<",W="<<target_position.angular.z);
 
-        //Define is goal hasn't been reach
 		if (isGoalFar(robot_position, target_position)) {	
-            //generate the new velocity
+
 			desired_velocity = generateConstantVelocity(cruise_speed, robot_position, target_position);
-            //rotate the omnidirectional robot
-			// desired_velocity = rotateVelocity(desired_velocity, -robot_position.angular.z);
-            //bound the velocity
 			desired_velocity = boundVelocity(desired_velocity);
 		} else { 
             // Goal has been reach ==> dont move

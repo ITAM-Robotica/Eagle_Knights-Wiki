@@ -27,10 +27,10 @@ include_directories( ${catkin_INCLUDE_DIRS}
                      ${GAZEBO_INCLUDE_DIRS}
 )
 
-add_library(${PROJECT_NAME} models/gazebo_plugin.cpp)
+#add_library(${PROJECT_NAME} models/gazebo_plugin.cpp)
 
 ## Specify libraries to link a library or executable target against
-target_link_libraries( ${PROJECT_NAME} ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES} CameraPlugin )
+#target_link_libraries( ${PROJECT_NAME} ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES} CameraPlugin )
 # ## Find catkin macros and libraries
 # ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 # ## is used, also find other catkin packages

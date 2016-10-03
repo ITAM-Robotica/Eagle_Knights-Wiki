@@ -49,8 +49,6 @@ cp PATH_TO_REPO/SDI-11911/Proyecto2/src/ekbot_description/model.* EKBot/
 ```
 source devel/setup.bash
 roscore
-export GAZEBO_MODEL_PATH=PATH_TO_REPO/SDI-11911/Proyecto2/src/ #or include it in your ba
-shrc
 roslaunch ekbot_gazebo ekbot.launch #launches gazebo with EKBot in (0,0,0)
 ```
 Run each of the following commands in a different terminal (source devel/setup.bash in each one):

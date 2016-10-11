@@ -61,8 +61,8 @@ rosrun ekbot_ctrl robot_trajectory_node #node to calculate a simple trajectory
 ```
 ## AutoNOMOS
 The directories for the AutoNOMOS are: 
-autonomos_gazebo ==> model files for the simulation (the ones gazebo uses)
-autonomos_simulation ==> files for simulation camera output
+*autonomos_gazebo ==> model files for the simulation (the ones gazebo uses)
+*autonomos_simulation ==> files for simulation camera output
 
 ### Run gazebo with AutoNOMOS
 There are diferent .launch files in src/autonomos_gazebo/launch/ and new ones can be created.

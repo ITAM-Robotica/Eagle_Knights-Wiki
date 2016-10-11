@@ -59,6 +59,30 @@ vel
 rostopic pub /target_position_topic geometry_msgs/Twist -- '[3,0,0]' '[0,0,0]' #topic to publish desired position [x,y,z] [p,r,w] (only x,y & w are used)
 rosrun ekbot_ctrl robot_trajectory_node #node to calculate a simple trajectory
 ```
+## AutoNOMOS
+The directories for the AutoNOMOS are: 
+autonomos_gazebo ==> model files for the simulation (the ones gazebo uses)
+autonomos_simulation ==> files for simulation camera output
+
+### Run gazebo with AutoNOMOS
+There are diferent .launch files in src/autonomos_gazebo/launch/ and new ones can be created.
+roscore must be running
+```
+roslaunch autonomos_gazebo FILE.launch 
+```
+
+### Run the simulation
+There are three nodes that must be launch and gazebo must be running
+```
+rosrun autonomos_simulation tf2_broadcaster_node 
+rosrun autonomos_simulation vision_node
+rosrun autonomos_simulation perception_node
+```
+or with a .launch file
+```
+roslaunch autonomos_simulation ros_autonomos.launch
+```
+When launching the nodes, there might be some ERROR messages from vision_node, its normal since it needs to wait for the other nodes.
 
 ## Important Files
 The EKBot description file - src/ekbot_description/model.sdf

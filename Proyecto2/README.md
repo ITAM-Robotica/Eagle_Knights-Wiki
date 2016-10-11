@@ -87,6 +87,7 @@ or with a .launch file
 roslaunch autonomos_simulation ros_autonomos.launch
 ```
 When launching the nodes, there might be some ERROR messages from vision_node, its normal since it needs to wait for the other nodes.
+![alt tag] (images/autonomos_simulation_nodes.png)
 
 ## Directories
 * autonomos_gazebo     ==> files for gazebo

@@ -65,6 +65,10 @@ The directories for the AutoNOMOS are:
 * autonomos_simulation ==> files for simulation camera output
 
 ### Run gazebo with AutoNOMOS
+Copy all the files to the local gazebo dir, usually at ~/.gazebo/models
+```
+cp -r src/autonomos_gazebo/AutoNOMOS_* ~/.gazebo/models
+```
 There are diferent .launch files in src/autonomos_gazebo/launch/ and new ones can be created.
 roscore must be running
 ```
@@ -85,24 +89,30 @@ roslaunch autonomos_simulation ros_autonomos.launch
 When launching the nodes, there might be some ERROR messages from vision_node, its normal since it needs to wait for the other nodes.
 
 ## Directories
-* autonomos_gazebo     
-  * AutoNOMOS_curved_road 
+* autonomos_gazebo     ==> files for gazebo
+  * AutoNOMOS_curved_road  
   * AutoNOMOS_mini_Intersection  
   * AutoNOMOS_mini
   * AutoNOMOS_straight_road
   * launch 
   * worlds
 
-* autonomos_simulation  
+* autonomos_simulation  ==> files to simulate vision
+  * tf2_broadcaster_node.cpp
+  * perception_node.cpp  
+  * vision_node.cpp
+  * launch 
 * ekbot_description
-* ekbot_ctrl      
+  * model.config
+  * model.sdf
+* ekbot_ctrl
+  * robot_trajectory_node.cpp 
+  * robot_velocity_node.cpp
 * ekbot_gazebo
+  * launch 
+  * worlds
 
-* The EKBot description file - src/ekbot_description/model.sdf
-* The launch file - src/ekbot_gazebo/launch/ekbot.launch 
-* The trajectory generator - src/ekbot_ctrl/robot_trajectory_node.cpp
-*
 
 ## Links
 Gazebo - http://gazebosim.org/tutorials
-
+Point Cloud Library - http://docs.pointclouds.org/trunk/index.html

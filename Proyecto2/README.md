@@ -84,10 +84,24 @@ roslaunch autonomos_simulation ros_autonomos.launch
 ```
 When launching the nodes, there might be some ERROR messages from vision_node, its normal since it needs to wait for the other nodes.
 
-## Important Files
-The EKBot description file - src/ekbot_description/model.sdf
-The launch file - src/ekbot_gazebo/launch/ekbot.launch 
-The trajectory generator - src/ekbot_ctrl/robot_trajectory_node.cpp
+## Directories
+* autonomos_gazebo     
+  * AutoNOMOS_curved_road 
+  * AutoNOMOS_mini_Intersection  
+  * AutoNOMOS_mini
+  * AutoNOMOS_straight_road
+  * launch 
+  * worlds
+
+* autonomos_simulation  
+* ekbot_description
+* ekbot_ctrl      
+* ekbot_gazebo
+
+* The EKBot description file - src/ekbot_description/model.sdf
+* The launch file - src/ekbot_gazebo/launch/ekbot.launch 
+* The trajectory generator - src/ekbot_ctrl/robot_trajectory_node.cpp
+*
 
 ## Links
 Gazebo - http://gazebosim.org/tutorials

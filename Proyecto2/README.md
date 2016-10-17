@@ -94,12 +94,12 @@ When launching the nodes, there might be some ERROR messages from vision_node, i
 1. The model must be first downloaded and placed in ~/.gazebo/models/.
 2. The files in src/autonomos_gazebo/worlds/ can be changed (or add a new one) to directly spawn a speceific robot.
 3. To be sure the points being detected by vision_node are the correct ones, after running gazebo with the robot and the scenario, run 
-```
-rostopic echo -n1 /gazebo/link_states | more
-```
-This should list all the links in the model, for the autonomos_mini: 
+  ```
+  rostopic echo -n1 /gazebo/link_states | more
+  ```
+4. This should list all the links in the model, for the autonomos_mini: 
 
-* ['ground_plane::link', 'ackermann::base_link', 'ackermann::back_left_wheel_link', 'ackermann::back_right_wheel_link', 'ackermann::front_left_bar_link', 'ackermann::front_left_wheel_link', 'ackermann::front_right_bar_link', 'ackermann::front_right_wheel_link', 'ackermann::steer_link', 'ackermann::ackermann_bar_link', 'AutoNOMOS_mini_intersection::field', 'AutoNOMOS_mini_intersection::L1_p1', ... ] 
+  * ['ground_plane::link', 'ackermann::base_link', 'ackermann::back_left_wheel_link', 'ackermann::back_right_wheel_link', 'ackermann::front_left_bar_link', 'ackermann::front_left_wheel_link', 'ackermann::front_right_bar_link', 'ackermann::front_right_wheel_link', 'ackermann::steer_link', 'ackermann::ackermann_bar_link', 'AutoNOMOS_mini_intersection::field', 'AutoNOMOS_mini_intersection::L1_p1', ... ] 
 5. Look for the first link named "AutoNOMOS[...]::L1_p1" and get its position (starting from 0), in this example is 11. Change if necessary the value of the variable "first_point" at src/autonomos_simulation/vision_node.cpp to this value.
 
 

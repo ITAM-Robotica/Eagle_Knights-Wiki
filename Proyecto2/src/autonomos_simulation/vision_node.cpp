@@ -66,7 +66,12 @@ void gen_point_cloud(const gazebo_msgs::LinkStates& gazebo_msg){
 		// line and point vars are used to track the position of each point as if pc_original was a matrix.
 		int line = 0;
 		int point = 0;
-	    for (int i = 7; i < gazebo_msg.pose.size(); ++i)
+
+		// int first_point = 11; //FIRST POINT IF USING ONLY THE AUTONOMOS-MINI
+		int first_point = 7; //FIRST POINT IF USING ONLY THE TURTLEBOT
+
+
+	    for (int i = first_point; i < gazebo_msg.pose.size(); ++i)
 	    {
 	       	pc_original -> points[line * points + point].x = gazebo_msg.pose[i].position.x;
 	    	pc_original -> points[line * points + point].y = gazebo_msg.pose[i].position.y;

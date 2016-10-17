@@ -90,6 +90,17 @@ When launching the nodes, there might be some ERROR messages from vision_node, i
 ### AutoNOMOS simulation Nodes
 ![alt tag] (images/autonomos_simulation_nodes.png)
 
+### AutoNOMOS laser
+After launching gazebo with the autonomos-mini, verify that the laser can be seen (a blue circle with the robot in its center) and run:
+```
+rostopic list
+```
+The output should have a topic named "/laser_scan". The output is of type: "sensor_msgs/LaserScan", to see it run: 
+```
+rostopic echo -n1 /laser_scan 
+```
+
+
 ## Using other robots (turtlebot)
 1. The model must be first downloaded and placed in ~/.gazebo/models/.
 2. The files in src/autonomos_gazebo/worlds/ can be changed (or add a new one) to directly spawn a speceific robot.
@@ -132,3 +143,4 @@ When launching the nodes, there might be some ERROR messages from vision_node, i
 ## Links
 Gazebo - http://gazebosim.org/tutorials
 Point Cloud Library - http://docs.pointclouds.org/trunk/index.html
+sensor_msgs/LaserScan - http://docs.ros.org/api/sensor_msgs/html/msg/LaserScan.html

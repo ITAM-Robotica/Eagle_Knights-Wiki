@@ -23,6 +23,7 @@ PointCloud::Ptr pc_original (new PointCloud); 	//pointcloud for the points in wo
 PointCloud::Ptr pc_car (new PointCloud);		//pointcloud for the points in car coordinates
 PointCloud::Ptr pc_seen (new PointCloud);		//pointcloud for the points seen in car coordinates
 std::string robot_name;
+std::string world;
 
 // calculate the slope of the lines limiting the vision of the camera
 const double m1 = tan ( 54 * PI / 180.0 );
@@ -67,8 +68,8 @@ void gen_point_cloud(const gazebo_msgs::LinkStates& gazebo_msg){
 		int line = 0;
 		int point = 0;
 
-		// int first_point = 11; //FIRST POINT IF USING ONLY THE AUTONOMOS-MINI
-		int first_point = 7; //FIRST POINT IF USING ONLY THE TURTLEBOT
+		 int first_point = 11; //FIRST POINT IF USING ONLY THE AUTONOMOS-MINI
+	//	int first_point = 7; //FIRST POINT IF USING ONLY THE TURTLEBOT
 
 
 	    for (int i = first_point; i < gazebo_msg.pose.size(); ++i)
@@ -99,7 +100,7 @@ void gen_point_cloud(const gazebo_msgs::LinkStates& gazebo_msg){
 void transform_pointCloud(const tf::TransformListener& tfListener){
 
 	// name of frame to look for
-	robot_name = "autoNOMOS_1";
+	//robot_name = "autoNOMOS_1";
 
 	// define a NaN point 
 	const float bad_val = std::numeric_limits<float>::quiet_NaN();
@@ -113,9 +114,10 @@ void transform_pointCloud(const tf::TransformListener& tfListener){
 		// initialize pc_car
 		pc_car -> height = pc_original -> height;
 		pc_car -> width = pc_original -> width;
-
+		pc_car -> header.frame_id = robot_name;
+		
 		// use frame called robot_name to transform points in pc_original into pc_car using tfListener
-		pcl_ros::transformPointCloud(robot_name, *pc_original, *pc_car, tfListener);
+		pcl_ros::transformPointCloud(robot_name, ros::Time(0),  *pc_original, world, *pc_car, tfListener);
 
 		int i = 0;
 
@@ -153,9 +155,12 @@ int main(int argc, char **argv)
 
 	ros::Subscriber sub_points_pos = nh.subscribe("/gazebo/link_states", 1, &gen_point_cloud); 
 	ros::Publisher pub = nh.advertise<PointCloud> ("pointCloud_vision", 1);
+	
+	world = "world";
+	robot_name = "autoNOMOS_1";
 
 	tf::TransformListener tfListener;
-
+	tfListener.waitForTransform(world, robot_name, ros::Time::now(), ros::Duration(3.0) );
 	ros::Rate loop_rate(rate_hz);
 	while (nh.ok())
 	{

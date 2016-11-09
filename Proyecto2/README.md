@@ -113,6 +113,22 @@ rostopic echo -n1 /laser_scan
   * ['ground_plane::link', 'ackermann::base_link', 'ackermann::back_left_wheel_link', 'ackermann::back_right_wheel_link', 'ackermann::front_left_bar_link', 'ackermann::front_left_wheel_link', 'ackermann::front_right_bar_link', 'ackermann::front_right_wheel_link', 'ackermann::steer_link', 'ackermann::ackermann_bar_link', 'AutoNOMOS_mini_intersection::field', 'AutoNOMOS_mini_intersection::L1_p1', ... ] 
 5. Look for the first link named "AutoNOMOS[...]::L1_p1" and get its position (starting from 0), in this example is 11. Change if necessary the value of the variable "first_point" at src/autonomos_simulation/vision_node.cpp to this value.
 
+## ROSBags
+There are two bags:
+* intersection.bag
+* road.bag
+To use them, run (while running roscore in a different terminal):
+```
+rosbag play BAG_TO_USE
+```
+To display all the topics published by the bag use:
+```
+rosbag info SOME_BAG
+```
+To view the rgb images, play the bag and run:
+```
+rosrun image_view image_view image:=/app/camera/rgb/image_raw
+```
 
 ## Directories
 * autonomos_gazebo     ==> files for gazebo

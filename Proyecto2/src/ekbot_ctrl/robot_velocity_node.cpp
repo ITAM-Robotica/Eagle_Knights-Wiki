@@ -56,7 +56,7 @@ double* getMotorValue(int x_velocity, int y_velocity, int w_velocity){
 void get_vel_vec(const geometry_msgs::Twist& msg) {
 	velocity_msg.linear.x = msg.linear.x;
 	velocity_msg.linear.y = msg.linear.y;
-    velocity_msg.angular.z = msg.linear.z; 
+    velocity_msg.angular.z = msg.angular.z; 
 }
 
 

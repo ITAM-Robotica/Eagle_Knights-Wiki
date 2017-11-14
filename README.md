@@ -57,7 +57,7 @@ rostopic echo -n1 /topic_name
 ```
 To publish to a topic from the command line:
 ```
-rostopic pub 
+rostopic pub topic-name topic-type data...
 ```
 
 ## Gazebo Topics

@@ -1,0 +1,7 @@
+<launch>
+
+    <node pkg="ekbot_ctrl" type="robot_velocity_node" name="robot_velocity_node"/>
+    <node pkg="rostopic" type="rostopic" name="pub_vels" args="pub /target_position_topic geometry_msgs/Twist -- '[3,0,0]' '[0,0,0]'"/> -->
+    <node pkg="ekbot_ctrl" type="robot_trayectory_node" name="robot_trayectory_node" /> -->
+
+</launch>

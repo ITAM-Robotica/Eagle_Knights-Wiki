@@ -1,6 +1,6 @@
-Wiki of the EagleKnight git
+Wiki of the EagleKnights git
 
-GO TO THE WIKI TAB!
+GO TO THE WIKI TAB! 
 
 
 
